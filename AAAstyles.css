@@ -278,3 +278,36 @@ body {
   color: #09207b;
 }
 
+/* --- Misiones con historia disponible --- */
+.solarsys-link.solarsys-link--active {
+  color: #4da3ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.solarsys-link.solarsys-link--active:hover,
+.solarsys-link.solarsys-link--active:focus-visible {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(77, 163, 255, 0.8);
+}
+
+/* --- Misiones sin historia todavía --- */
+.solarsys-link.solarsys-link--inactive {
+  color: inherit;
+  opacity: 0.4;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: default;
+  pointer-events: auto; /* permite mostrar el title al pasar el mouse */
+}
+.solarsys-link.solarsys-link--inactive:hover {
+  color: inherit;
+  text-shadow: none;
+}
+
+/* Resaltado del texto al llegar a la sección (Chrome/Edge/Safari) */
+::target-text {
+  background: transparent;
+  color: inherit;
+}

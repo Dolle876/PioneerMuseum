@@ -1,0 +1,280 @@
+/*<> # @ {}*/
+/*Los nombres de los colores indican para que son usados*/
+/*fuentes: orbitron (titulos), share tech mono (botones, texto corto), exo 2 (cuerpo principal, texto largo)*/
+:root {
+  --fondo: #0b1026;
+  --contenedor: #18204a;
+  --borde: #2b3a73;
+  --links: #9aa9dd;
+  --texto: #f2f4ff;
+}
+body {
+  background-color: var(--fondo);
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+section {
+  background-color: rgb(24, 32, 74, 0.75);
+  border: var(--borde) 8px double;
+  margin: 4%;
+  padding: 5%;
+  border-radius: clamp(10px, 2vw, 25px);
+}
+p {
+  color: var(--texto);
+  font-family: "Exo 2";
+}
+h1 {
+  color: #f2f4ff;
+  font-family: orbitron;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+#h1 h1 {
+  margin: 0;
+  line-height: 1;
+}
+
+#h1 p {
+  margin: 2px 0 0 0;
+  line-height: 1.2;
+}
+.ico img {
+  width: 120%;
+}
+h2 {
+  font-family: share tech mono;
+  color: var(--links);
+  transition: 0.5s;
+}
+h2:hover {
+  color: hsl(227, 74%, 88%);
+  transition: 0.5s;
+}
+a {
+  text-align: center;
+  font-family: share tech mono;
+  padding: 1%;
+  color: var(--links);
+  transition: 0.5s;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--texto);
+  transition: 0.5s;
+  text-decoration: none;
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+/*----------------------------------------------NAV-------------------------------------------------------------------*/
+nav {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #51566c;
+}
+#icodiv {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  gap: 5%;
+  align-items: center;
+}
+ico,
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+#enlaces {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1%;
+}
+#navli {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 150%;
+  white-space: nowrap;
+}
+
+#active {
+  color: var(--texto);
+  text-decoration: underline;
+}
+
+.slinks {
+  width: 40px;
+  justify-content: center;
+}
+
+.nava {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#home:hover {
+  filter: drop-shadow(0 0 8px #64b5f6);
+  transform: scale(1.05);
+}
+
+#moon:hover {
+  filter: drop-shadow(0 0 8px #e0e0e0);
+  transform: scale(1.05);
+}
+
+#mars:hover {
+  filter: drop-shadow(0 0 8px #ff5252);
+  transform: scale(1.05);
+}
+
+#deep-space:hover {
+  filter: drop-shadow(0 0 8px #b388ff);
+  transform: scale(1.05);
+}
+
+#others:hover {
+  filter: drop-shadow(0 0 8px #64ffda);
+  transform: scale(1.05);
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+
+body {
+  background-color: var(--fondo);
+  background-image: url("estrellas.jfif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#welcomesect {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: rgba(249, 218, 218, 0.75);
+  border: solid blue 0px;
+  border-radius: 0px;
+}
+#welcomeh2 {
+  text-align: center;
+  color: #18204a;
+}
+#welcomeh2:hover {
+  color: var(--links);
+}
+.wel {
+  text-align: center;
+  color: #18204a;
+  font-family: orbitron;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+.solarsys-table-container {
+  background-color: #0b3d91; /* Fondo azul oscuro espacial para el contenedor */
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.solarsys-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Fondo blanco sólido para la tabla */
+  color: #333333;
+  border: 1px solid #cccccc;
+}
+
+.solarsys-th {
+  background-color: #1a2b4c;
+  color: #ffffff;
+  padding: 12px 10px;
+  border: 1px solid #444444;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.solarsys-td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  vertical-align: top;
+  background-color: #f0f4f8; /* Evita transparencia con la sección principal */
+  font-size: 13px;
+}
+
+.solarsys-mission-type {
+  font-weight: bold;
+  background-color: #d0ecf5;
+  color: #0b3d91;
+  width: 14%;
+}
+
+.solarsys-list {
+  margin: 0;
+  padding-left: 16px;
+  list-style-type: disc;
+}
+
+.solarsys-item {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.solarsys-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.solarsys-link:hover {
+  text-decoration: underline;
+  color: #003366;
+}
+.solarsys-mission-cell img {
+  width: 40%;
+  align-self: center;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+#groupweare{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: rgba(185, 233, 243, 0.75);
+  border: rgb(15, 0, 109) solid 3px;
+  border-radius: 0px;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+}
+#whoweare{
+  color: #0b1026;
+  text-decoration: dotted;
+  font-family: orbitron;
+}
+#whoweare:hover{
+
+}
+#groupweare li{
+  color:var(--texto);
+}
+#groupweare h3, #groupweare span{
+  font-family: orbitron;
+  color: #09207b;
+}
+
